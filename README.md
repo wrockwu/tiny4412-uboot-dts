@@ -1,15 +1,23 @@
 tiny4412-uboot-dts
 ===
-modified to support dts, which based on tiny4412 official u-boot.<br>
+This uboot is based on tiny4412 official u-boot.<br>
+#key difference<br>
+1.modified to support dts.<br>
+2.support uImage.<br>
 
-allocate image[8] to store dtb information.<br>
+#new feature
+1.repartition, add image[8] to store dtb information.<br>
+2.modify boot_args to support linux boot.<br>
+3.support ramdisk rootfs.<br>
+4.supprot uImage type kernel.<br>
 
-use command to build:<br>
+#usefull commands<br>
+command to build:<br>
 make tiny4412_config<br>
 make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- -j4<br>
 make -C sd_fuse<br>
 
-use command to make uImage<br>
+command to make uImage<br>
 ./mkimage -n "linux-4.4" -A arm -O linux -T kernel -C none -a 0x40000800 -e 0x4000800 -d zImage uImage<br>
 
 

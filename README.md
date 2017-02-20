@@ -1,12 +1,9 @@
 tiny4412-uboot-dts
 ===
 This uboot is based on tiny4412 official u-boot.<br>
-#key difference<br>
-1.modified to support dts.<br>
-2.support uImage.<br>
 
 #new feature
-1.repartition, add image[8] to store dtb information.<br>
+1.support dts.repartition, add image[8] to store dtb information.<br>
 2.modify boot_args to support linux boot.<br>
 3.support ramdisk rootfs.<br>
 4.supprot uImage type kernel.<br>

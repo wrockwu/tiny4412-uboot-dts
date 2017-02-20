@@ -15,6 +15,6 @@ make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- -j4<br>
 make -C sd_fuse<br>
 
 command to make uImage<br>
-./mkimage -n "linux-4.4" -A arm -O linux -T kernel -C none -a 0x40000800 -e 0x4000800 -d zImage uImage<br>
+./mkimage -n "linux-4.4" -A arm -O linux -T kernel -C none -a 0x40008000 -e 0x40008040 -d zImage uImage<br>
 
 

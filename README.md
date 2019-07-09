@@ -17,4 +17,6 @@ make -C sd_fuse<br>
 command to make uImage<br>
 ./mkimage -n "linux-4.4" -A arm -O linux -T kernel -C none -a 0x40008000 -e 0x40008040 -d zImage uImage<br>
 
+command to flash kernel
+fastboot flash kernel uImage
 
